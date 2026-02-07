@@ -6,7 +6,6 @@
 
 A Minecraft Fabric mod for schedulable and repeatable commands — made for 1.20 and 1.21.  
 Created by Poizon.
-Forked and Ported to 1.21.11 by Spiderspy007
 
 [Modrinth page](https://modrinth.com/mod/command-scheduler)
 
@@ -36,6 +35,12 @@ This is my first ever Minecraft mod! I made it for my own server, and I rushed t
 
 ---
 
+## Platform
+
+- Minecraft versions: **from 1.20 to 1.21.7**  
+- Fabric Loader: **0.16.10**  
+- Fabric API: **0.91.6+1.20.2**
+
 ## Screenshots
 
 The printout for when running the "/commandscheduler about" command:
@@ -43,5 +48,3 @@ The printout for when running the "/commandscheduler about" command:
 
 The printout for when showing details about a scheduler, by running"/commandscheduler details [id]":
 ![Alt Text](img/details.png)
-
-
