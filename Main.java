@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 import net.minecraft.command.permission.PermissionLevel;
 import net.minecraft.command.permission.Permission;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,7 +38,7 @@ import static net.minecraft.server.command.CommandManager.literal;
 public class Main implements ModInitializer {
 
   private static final String MOD_ID = "commandscheduler";
-
+  public static final Permission USE_COMMANDS = Permission.Atom.of(Identifier.of(MOD_ID, "use"));
   // Boot commands runs 15 seconds after boot
   private static final int bootDelaySeconds = 15;
 
@@ -134,7 +135,8 @@ public class Main implements ModInitializer {
   private void registerUserCommands(MinecraftServer server) {
     CommandDispatcher<ServerCommandSource> dispatcher = server.getCommandManager().getDispatcher();
     dispatcher.register(literal("commandscheduler")
-        .requires((ServerCommandSource source) -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.fromLevel(2))))
+        .requires((ServerCommandSource source) -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.fromLevel(2)))
+                ||source.getPermissions().hasPermission(USE_COMMANDS))
         .executes(ctx -> Messages.sendHelpMenu(ctx, 1))
 
         // Command for help menus
