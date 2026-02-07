@@ -11,8 +11,9 @@ Forked and Ported to 1.21.11 by Spiderspy007
 [Modrinth page](https://modrinth.com/mod/command-scheduler)
 
 ## Status
-  I have no intention of updating this at all it was only so I could get it to work on my own private server. 
-  ⚠️ **Note**: Most of my code was written with Gemini.
+
+The mod is **mostly complete and stable**.  
+Almost all planned commands have been added, and most core functionality has been tested for all sub-versions of 1.20 and 1.21. You can activate, deactivate, rename, and schedule commands via in-game commands. See [this file](ToDoList.md) to see what is finished and what features are planned ahead.
 
 ---
 
@@ -42,4 +43,5 @@ The printout for when running the "/commandscheduler about" command:
 
 The printout for when showing details about a scheduler, by running"/commandscheduler details [id]":
 ![Alt Text](img/details.png)
+
 
