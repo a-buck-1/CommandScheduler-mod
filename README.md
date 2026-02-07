@@ -37,9 +37,9 @@ This is my first ever Minecraft mod! I made it for my own server, and I rushed t
 
 ## Platform
 
-- Minecraft versions: **from 1.20 to 1.21.7**  
-- Fabric Loader: **0.16.10**  
-- Fabric API: **0.91.6+1.20.2**
+- Minecraft versions: **from 1.20 to 1.21.11**  
+- Fabric Loader: **0.18.4**  
+- Fabric API: **0.141.3+1.21.11**
 
 ## Screenshots
 
@@ -48,3 +48,4 @@ The printout for when running the "/commandscheduler about" command:
 
 The printout for when showing details about a scheduler, by running"/commandscheduler details [id]":
 ![Alt Text](img/details.png)
+
